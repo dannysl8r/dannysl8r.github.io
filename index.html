@@ -1,36 +1,84 @@
 <!DOCTYPE html>
-<!-- saved from url=(0043)file:///Users/student/Desktop/anything.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-	<title>turtle!!!</title>
-<style> 
-#turtle {
-	 border-radius:75%;
-	 width:200px;
-	 height:200px;
-	 background-color:#294124;
-	 transition:1s;
+<html>
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+<style type="text/css">
+section {
+    background-color: turquoise;
+    width: 100%;
+    height: 800px;
+    border: double;
 }
 
-/* #turtle:hover{
-	 border-radius:24 :
-	 transition:1s:
-	 background-color:#249528
-	}
-*/
-	</style></head>
+#border {
+    height: 750px;
+    color: purple;
+}
+
+body {
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Kaushan Script', cursive;
+
+    margin: 0;
+}
+
+#menu {
+    background-color: purple;
+    position: fixed;
+    width: 150px;
+    height: 800px;
+    z-index: 5;
+    left: 90%;
+    top: 0%;
+
+}
 
 
 
+#dog {
+    background-color: purple;
+    width: 200px;
+    height: 200px;
+}
 
-	<body>
+a {
+    color: white;
+}
 
-<!-- 	<href="https://www.youtube.com/watch?v=gt4-k50b0rM"
- -->
-		<a href="anything.html"><div id="turtle"></div></a>
+#monet {
+    z-index: -10;
+    opacity: 0.7;
+    -webkit-filter: hue-rotate(90deg);
+}
 
+#container {
+    z-index: 10;
+    position: fixed;
+}
+</style>
 
+<body style="background-color:turquoise;">
+    <div id="container">
+        <h1>My Website</h1>
+        <h2>The Home to All of My Code</h2>
+        <p></p>
+        <a href="turtle.html">My First Code Sketch!</a>
+        <a href="journal.html">
+            <div id="dog"> My Code Journal</div>
+        </a>
+    </div>
+    <img id="monet" src="http://art-monet.com/image/1900/1903%20Water%20Lilies%20The%20Clouds7.jpg">
+    <div id="menu">
+        <a href="file:///Users/student/Desktop/repositories/dannysl8r.github.io/index.html">9/27/19</a>
+    </div>
+    <script type="text/javascript">
+    var painting = document.getElementById("monet");
+    // painting.style.webkitFilter = "hueRotate()"
 
+    painting.addEventListener("mousemove", function(event) {
+        console.log(event.screenX);
+    })
+    </script>
 
-
-
-</body></html>
+</html>
