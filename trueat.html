@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+    #blobfish {
+        width: 313px;
+        height: 313px;
+        background-color: green;
+        background-size: contain;
+    }
+    </style>
+</head>
+
+<body>Blobfish Generator! 
+    <div id="blobfish"></div>
+    <script type="text/javascript">
+    var blob = document.getElementById("blobfish");
+
+
+    var blobfishes = ["url(https://i.dailymail.co.uk/1s/2019/09/25/02/18896568-7501307-image-a-4_1569375884786.jpg)", "url(https://thumbs-prod.si-cdn.com/AD4YpjoYIUMjbWaOMTvLVuR6s5E=/420x240/https://public-media.si-cdn.com/filer/Blobfish-ugly-470.jpg)", "url(https://pbs.twimg.com/media/DpR3GUJUcAAaUuk.jpg)", "url(https://external-preview.redd.it/GaFZy6VV2JSADOlSHMoNDXCHRGQ87rbtIzl9biZS1po.png?auto=webp&s=54c177ae6f8c604fbc24778e4d571399ab54cb00)"]
+
+    blob.addEventListener("click", function() {
+
+        blob.style.backgroundImage = blobfishes[Math.round(Math.random() * 3)];
+        console.log(Math.round(Math.random() * 3));
+    })
+    </script>
+</body>
+
+</html>
