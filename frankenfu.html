@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+		.frankenfus{
+			width:100px;
+			height:150px;
+			background-image:url(frankenfu.png);
+			background-size:contain;
+			background-repeat:no-repeat;
+			display:inline-block;
+		}
+		
+	</style>
+</head>
+<body>
+
+	<div class="frankenfus"></div>
+
+	<script>
+	
+	function makeFrankenfu () {
+		var frankenfu = document.createElement("div");
+		document.body.appendChild(frankenfu);
+		frankenfu.classList.add("frankenfus");
+
+	}
+
+
+
+
+	for(var i=0; i<1000; i=i+1){
+		makeFrankenfu();
+	}
+</script>
+
+</body>
+</html>
