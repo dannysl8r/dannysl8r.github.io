@@ -6,7 +6,7 @@ section {
     background-color: turquoise;
     width: 100%;
     height: 800px;
-    border: double;
+    border: dotted;
 }
 
 #border {
@@ -19,6 +19,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Kaushan Script', cursive;
+    font-size-adjust: 14px;
 
     margin: 0;
 }
@@ -37,29 +38,40 @@ body {
 
 
 #journalDiv {
-    background-color: rgba(255, 0, 255,0.5);
-   }
+    background-color: rgba(255, 0, 255, 0.5);
+}
+
 .block {
     width: 100%;
-    height: 50px;
+    height: 50px; 
 }
 
-#turtle{
-        background-color: rgba(0, 255, 100,0.5);
-
-}
-#number{
-        background-color: rgba(255, 0, 100,0.5);
+#turtle {
+    background-color: rgba(0, 255, 100, 0.5);
 
 }
 
-#blob{
-        background-color: rgba(0, 0, 255,0.5);
+#number {
+    background-color: rgba(255, 0, 100, 0.5);
 
 }
-#fizzbuzz{
-        background-color: rgba(0, 255, 0,0.5);
 
+#blob {
+    background-color: rgba(0, 0, 255, 0.5);
+
+}
+
+#fizzbuzz {
+    background-color: rgba(0, 255, 0, 0.5);
+
+}
+
+#story {
+    background-color: rgba(0, 0, 1);
+}
+
+#frankenfu {
+    background-color: rgba(250, 250, 0);
 }
 
 a {
@@ -82,26 +94,34 @@ a {
     <div id="container">
         <h1>My Website</h1>
         <h2>The Home to All of My Code</h2>
-        
-        <a href="turtle.html"><div id="turtle" class="block">My First Code Sketch!</div></a>
-        <a href="LeonardoDiCaprio.html"><div id="number" class="block">Random Number Generator!</div></a>
-
-
-        <a href="trueat.html"><div id="blob" class="block">Blobfish Generator!</div></a>
-
-         <a href="fizzbuzz.html"><div id="fizzbuzz" class="block">FizzBuzz!</div></a>
-
-
-            <a href="https://docs.google.com/document/d/13ek-0isbgLHSRoetWALry1aJn3YeLuTO8MBsabBRvjs/edit">
-                <div class="block" id="journalDiv">My Code Journal</div>
-            </a>
+        <a href="turtle.html">
+            <div id="turtle" class="block">My First Code Sketch!</div>
+        </a>
+        <a href="LeonardoDiCaprio.html">
+            <div id="number" class="block">Random Number Generator!</div>
+        </a>
+        <a href="frankenfu.html">
+            <div id="frankenfu" class="block">Frankenfu Magic!</div>
+        </a>
+        <a href="blobstory.html">
+            <div id="story" class="block">My Project: Blobfish Story!</div>
+        </a>
+        <a href="trueat.html">
+            <div id="blob" class="block">Blobfish Generator!</div>
+        </a>
+        <a href="fizzbuzz.html">
+            <div id="fizzbuzz" class="block">FizzBuzz!</div>
+        </a>
+        <a href="https://docs.google.com/document/d/13ek-0isbgLHSRoetWALry1aJn3YeLuTO8MBsabBRvjs/edit">
+            <div class="block" id="journalDiv">My Code Journal</div>
+        </a>
     </div>
     <img id="monet" src="http://art-monet.com/image/1900/1903%20Water%20Lilies%20The%20Clouds7.jpg">
-    <div id="menu">
+    <!--  <div id="menu">
         <a href="file:///Users/student/Desktop/repositories/dannysl8r.github.io/index.html">9/27/19</a>
         <section>
             <a href="LeonardoDiCaprio.html">10/15/19</section>
-    </div>
+    </div> -->
     <script type="text/javascript">
     var painting = document.getElementById("monet");
     // painting.style.webkitFilter = "hueRotate()"

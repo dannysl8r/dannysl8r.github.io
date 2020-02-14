@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+		.frankenfus{
+			width:100px;
+			height:150px;
+			background-image:url("frankenfu.png");
+			background-size:contain;
+			background-repeat:no-repeat;
+			position:absolute;
+			transition: all .5s;
+		}
+		
+	</style>
+</head>
+<body>
+
+	<div class="frankenfus"></div>
+
+	<script>
+
+	function makeFrankenfus() {
+		var frankenfus = document.createElement("div");
+		document.body.appendChild(frankenfus);
+		frankenfus.classList.add("frankenfus");
+		frankenfus.style.left=Math.random()*1000+"px";
+		frankenfus.style.top=Math.random()*500+"px";
+		size=Math.random()*60+20;
+		frankenfus.style.height=size+"px";
+		frankenfus.style.width=size+"px";
+
+	function frankenfusMove(){
+		frankenfus.style.left=Math.random()*1000+"px";
+		frankenfus.style.top=Math.random()*500+"px";
+		size=Math.random()*60+20;
+		frankenfus.style.height=size+"px";
+		frankenfus.style.width=size+"px";
+	}
+
+	setInterval(frankenfusMove, 1000);
+
+	};
+
+
+
+
+	for(var i=0; i<1000; i=i+1){
+		makeFrankenfus();
+	}
+</script>
+
+</body>
+</html>
