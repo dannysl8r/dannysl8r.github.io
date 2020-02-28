@@ -12,6 +12,12 @@
         height: 500px;
         background-color: red;
         background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
     }
     </style>
 </head>
@@ -24,10 +30,9 @@
     var nerds = ["url(https://i.ytimg.com/vi/69eMoo8D4wg/maxresdefault.jpg)", "url(https://ihg.scene7.com/is/image/ihg/intercontinental-chicago-5377570366-2x1?fit=fit,1&wid=2400&hei=1200&qlt=85,0&resMode=sharp2&op_usm=1.75,0.9,2,0)", "url(https://s3-prod.chicagobusiness.com/GettyImages-1057157166.jpg)", "url(https://maroon-prod.s3.amazonaws.com/media/CACHE/images/photos/2018/09/09/5714444B-B56D-4EE8-B13B-9C765B2F1087/1e939030c39bf664be800f57f2fbdca5.jpegZS1po.png?auto=webp&s=54c177ae6f8c604fbc24778e4d571399ab54cb00)"];
 
     nerd.addEventListener("click", function() {
-    	nerd.style.backgroundImage = nerds[Math.round(Math.random() * 3)];
-    	 console.log(Math.round(Math.random() * 3)(;
-
-    })
+        nerd.style.backgroundImage = nerds[Math.round(Math.random() * 3)]
+        console.log(Math.round(Math.random() * 3))
+    });
     </script>
 
     <body></body>
