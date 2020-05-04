@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+<head>
+    <title></title>
+    <h1>Here are some inspirational quotes</h1>
+    <h2>(They're super inspirational!!!)</h2>
+    <style type="text/css">
+    #coolbeans {
+        width: 500px;
+        height: 500px;
+        background-color: yellow;
+        background-size: contain;
+        background-size: fill;
+        object-fit: fill;
+        background-repeat: no-repeat;
+
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 5px 5px 8px green, 10px 10px 8px pink, 15px 15px 8px green;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="coolbeans"></div>
+    <script type="text/javascript">
+    var ted = document.getElementById("coolbeans");
+
+    var johnson = ["url(https://static.boredpanda.com/blog/wp-content/uploads/2019/04/famous-people-inspiring-quotes-2b-5cb436fcd0f39__700.jpg)", "url(https://www.fearlessmotivation.com/wp-content/uploads/2017/02/great-motivational-quotes-mandela.jpg)", "url(https://static.boredpanda.com/blog/wp-content/uploads/2019/04/famous-people-inspiring-quotes-4-5cb43718b103a__700.jpg)", "url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT6Selj7TI_5EtCeFoMzQRdpe0A5e8OskZogrnnW5IcD8OoiVHg&usqp=CAU)"];
+
+    ted.addEventListener("click", function() {
+        ted.style.backgroundImage = johnson[Math.round(Math.random() * 3)]
+        console.log(Math.round(Math.random() * 3))
+    });
+    </script>
+
+    <body></body>
+
+</html>
